@@ -1,0 +1,53 @@
+.main_saunas {
+    background-image: url(../img/sauna1.webp);
+}
+
+.directions_block_saunas {
+    margin-top: 0px;
+    padding-top: 120px;
+}
+
+.directions_block_saunas div:nth-child(1) {
+    background-image: url(../img/s1.webp);
+}
+
+.directions_block_saunas div:nth-child(2) {
+    background-image: url(../img/s2.webp);
+}
+
+.directions_block_saunas div:nth-child(3) {
+    background-image: url(../img/s3.webp);
+}
+
+.directions_block_saunas div:nth-child(4) {
+    background-image: url(../img/s4.webp);
+}
+
+.tagging {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+
+    /* Добавлено: начальное состояние для анимации */
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.tagging svg {
+    position: absolute;
+    transform: translate(0px, -31px);
+}
+
+.tagging.show {
+    opacity: 1;
+    transform: translateY(0);
+}
