@@ -57,3 +57,57 @@ header {
 .header_bottom li a {
     color: white;
 }
+
+.header_saunas_block {
+    position: absolute;
+    top: 120px;
+    opacity: 0;
+    visibility: hidden;
+    width: 115px;
+    height: 0;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    background-color: white;
+    
+    border-radius: 20px;
+    padding: 20px;
+    
+    box-sizing: border-box;
+    
+    transition: 
+        opacity 0.1s ease 1s,    /* opacity меняется за 0.3s после 3s задержки */
+        visibility 0.1s ease 1s, /* visibility тоже */
+        height 0s ease 1s;     /* height сбрасывается после анимации */
+}
+
+.header_saunas_link:hover + .header_saunas_block,
+.header_saunas_link:hover .header_saunas_block {
+    opacity: 1;
+    visibility: visible;
+    height: 256px;
+    transition: 
+        opacity 0.1s ease,       /* Появление без задержки */
+        visibility 0.1s ease,
+        height 0.1s ease;
+
+    padding: 20px;
+    border: solid 1px white;
+}
+
+.header_saunas_block a {
+    color: black !important;
+    border-top: 1px solid;
+    padding-top: 20px;
+}
+
+
+
+.header_saunas_block a:first-child {
+    border-top: none;
+    padding-top: 0;
+}

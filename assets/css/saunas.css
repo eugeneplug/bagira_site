@@ -151,3 +151,26 @@
 .main_cosmic .container {
     max-width: 1184px;
 }
+
+.sauna_pics {
+
+}
+
+.sauna_pics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+/**/
+
+.main_grot {
+    background-image: url(../img/sauna4.webp);
+}
+
+.main_sport {
+    background-image: url(../img/sauna3.webp);
+}
