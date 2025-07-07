@@ -21,4 +21,20 @@ a {
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
+
+.breadcrumbs {
+    color: rgba(246, 246, 246, 1);
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    top: -120px;
+    font-weight: 400;
+}
+
+.breadcrumbs a {
+    color: rgba(246, 246, 246, 1);
+    font-size: 20px;
+}
+
