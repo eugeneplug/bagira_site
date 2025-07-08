@@ -292,7 +292,7 @@
 
         <div id="mainLink1" class="sauna_content">
             <div class="container">
-                <div class="base_title">СТОИМОСТЬ</div>
+                <div class="base_title base_titleCosmic">СТОИМОСТЬ</div>
 
                 <div class="sauna_price_block">
 
@@ -792,16 +792,77 @@
     </div>
 
     <style>
-        .directions_block_saunas {
-            /* padding-top: 20px; */
-            padding: 0;
+        @media (max-width:950px) {
+
+            .directions_block_saunas {
+                padding: 0;
+                background-position: 100px;
+
+
+            }
+
+            .owl-carousel .owl-item img {
+                display: none;
+            }
+
+            .slide2 {
+                background-size: cover;
+                min-height: 500px;
+            }
+
+            .base_titleCosmic {
+                margin-top: 530px;
+            }
+
+        }
+
+        @media (max-width:775px) {
+            .slide2 {
+                min-height: 400px;
+            }
+        }
+
+        @media (max-width:660px) {
+            .slide2 {
+                min-height: 300px;
+            }
+
+            .slide2 p,
+            .slider_so .slide a {
+                font-size: 16px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+
+        @media (max-width:480px) {
+            .slide2 {
+                min-height: 192px;
+            }
+
+            .slide2 p {
+                position: relative;
+                top: 7px;
+                right: 3px;
+            }
+
+            .slide2 a {
+                position: relative;
+                top: 12px;
+            }
+        }
+
+
+
+
+        .sauna_pics img:last-child {
+            width: 200%;
         }
 
         .slide2 {
             height: 340px;
             background-repeat: no-repeat;
             background-position: center;
-
             display: flex;
             flex-direction: row;
             align-items: end;
@@ -855,10 +916,6 @@
 
         .slide2bcg4 {
             background-image: url(../assets/img/s4.webp) !important;
-        }
-
-        .sauna_pics img:last-child {
-            width: 200%;
         }
     </style>
 
