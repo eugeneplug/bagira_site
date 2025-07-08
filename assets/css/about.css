@@ -33,3 +33,143 @@
 .reviews {
     padding-bottom: 120px;
 }
+
+.reviews_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.reviews_block div {
+    position: relative;
+    max-width: 580px;
+    width: 100%;
+    /* height: 280px; */
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 280px;
+}
+
+.reviews_block div:first-child {
+    background-image: url(../img/about/blot_top_right.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.reviews_block article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews_block article p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(254, 113, 38, 1);
+}
+
+.reviews_block article p:last-child {
+    font-size: 20px;
+}
+
+.yandex_p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 52px;
+    margin-left: 100px;
+}
+
+.yandex_a {
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    margin-top: auto;
+}
+
+.yandex_a a {
+    width: 260px;
+    height: 64px;
+    background-color: rgba(255, 245, 240, 1);
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: 0.15s;
+}
+
+.yandex_a a:hover {
+    background-color: rgba(254, 113, 38, 1);
+    color: white;
+    transition: 0.15s;
+}
+
+.reviews_block_text {
+    font-size: 20px;
+    margin-top: 40px;
+}
+.reviews_block_name_date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.reviews_block_name_date p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+}
+
+.map_about {
+    height: 700px;
+    width: 100%;
+    background-image: url(../img/about/map.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.map_about_block {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+    box-sizing: border-box;
+    max-width: 507px;
+    width: 100%;
+    border-radius: 20px;
+
+   position: relative;
+   top: 100px;
+}
+
+.map_about_block article {
+    margin-top: 20px;
+}
+
+.map_about_block span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.map_about_block svg {
+    min-height: 32px;
+    min-width: 32px;
+}
+
+.map_about_block p, .map_about_block a {
+    font-size: 24px;
+}
+
+.map_about_block article:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
