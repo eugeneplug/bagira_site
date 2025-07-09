@@ -6,6 +6,8 @@
     background-image: url(../img/form.webp);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+
+    background-size: cover;
     
 }
 

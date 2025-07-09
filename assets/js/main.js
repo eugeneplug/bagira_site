@@ -205,5 +205,38 @@ document.querySelectorAll('.directions_block div a').forEach(link => {
     link.innerHTML = link.innerHTML.replace(/[^<]*/, '');
 });
 
-
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Функция для обработки переключения радио-кнопок
+    function setupRadioGroup(groupName) {
+      const radios = document.querySelectorAll(`input[name="${groupName}"]`);
+      
+      radios.forEach(radio => {
+        radio.addEventListener('change', function() {
+          // Находим все иконки в этой группе
+          document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+            const icon = r.nextElementSibling;
+            if (r.checked) {
+              icon.innerHTML = `
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#FE7126"></circle>
+                  <circle cx="12" cy="12" r="8.5" stroke="white"></circle>
+                </svg>
+              `;
+            } else {
+              icon.innerHTML = `
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="11.5" stroke="#FE7126"></circle>
+                  <circle cx="12" cy="12" r="8.5" stroke="#FE7126"></circle>
+                </svg>
+              `;
+            }
+          });
+        });
+      });
+    }
+  
+    // Инициализируем обе группы
+    setupRadioGroup('radio-group-1');
+    setupRadioGroup('radio-group-2');
+    setupRadioGroup('radio-group-3');
+  });

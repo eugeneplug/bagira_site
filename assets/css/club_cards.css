@@ -1,0 +1,271 @@
+.main_club {
+    background-image: none;
+}
+
+.wrapper_club h1, .wrapper_club .header_bottom li a, .wrapper_club .header_top div {
+    color: black;
+}
+
+
+.wrapper_club .header_top svg, .wrapper_club .header_top img, .wrapper_club .header_saunas_link svg{
+    filter: invert(1);
+}
+
+.wrapper_club .header_link {
+    background-color: rgba(254, 113, 38, 1);
+    color: white;
+}
+
+.wrapper_club .header_top_wrapper {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper_club .header_vk {
+    filter: invert(0) !important;
+}
+
+.wrapper_club .main_text_under {
+    color: black;
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.club_select_block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.club_select_block_div {
+    max-width: 580px;
+    width: 100%;
+}
+
+.club_select_block h3 {
+    font-size: 20px;
+}
+
+.club_select_block article {
+    max-width: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 68px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.club_open_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.club_open {
+    max-width: 580px;
+    width: 100%;
+    height: 344px;
+    /* min-height: 344px; */
+
+    background-color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.club_open h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.club_openOne article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.svg-radio {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.svg-radio__input {
+    display: none;
+}
+
+.svg-radio {
+    margin-top: 20px;
+}
+
+.svg-radio span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.type2_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  /* Прячем дефолтный радио-инпут */
+  .radio-label input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Кастомный кружок (внешняя часть) */
+  .radio-custom {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  /* Внутренний оранжевый кружок (через ::before) */
+  .radio-custom::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;  /* 24px - 2*2px border - 4px отступы = 16px */
+    height: 16px;
+    background: #FE7126;
+    border-radius: 50%;
+    opacity: 0;  /* По умолчанию невидим */
+    transition: opacity 0.2s;
+  }
+  
+  /* Показываем ::before при выборе */
+  .radio-label input:checked + .radio-custom::before {
+    opacity: 1;
+  }
+
+
+  .club_open_text {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  .club_open_result {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 40px; */
+    margin-top: auto;
+  }
+
+  .club_open_result p:first-child {
+    color: #333433;
+    font-size: 20px;
+  }
+
+
+  .club_open_result_price {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+
+  .radio-group-3_block {
+    display: flex;
+    gap: 20px;
+  }
+
+  .club_open_itog_summ {
+    /* padding-bottom: 120px; */
+
+   
+
+  }
+
+  .club_open_itog_summ_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    height: 158px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+
+    background-image: 
+    url(../img/club/1.png),
+    url(../img/club/2.png);
+
+    background-repeat: no-repeat;
+    background-position: left bottom, top right;
+
+  }
+
+  .club_open_itog_summ_block span {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .club_open_itog_summ_block p:first-child {
+    font-size: 20px;
+    color: #333433;
+  }
+
+  .club_open_itog_summ_block p:last-child {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .club_open_itog_summ a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+    width: 100%;
+    height: 78px;
+    background-color: #FE7126;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 100px;
+  }
