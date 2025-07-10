@@ -1,0 +1,118 @@
+.boks_block {
+    max-width: 1180px;
+    width: 100%;
+
+    margin: 0 auto;
+    background-color: white;
+    /* height: 252px; */
+    margin-top: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boks_block article {
+    display: flex;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    box-sizing: border-box;
+}
+
+.boks_block article div {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 50px;
+    width: 147px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boks_block article span {
+    font-size: 14px;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+
+.boks_block article:first-child div {
+
+    color: #858585;
+}
+
+.boks_block article:nth-child(2) {
+    border-top: solid 1px #858585;
+    border-bottom: solid 1px #858585;
+}
+.directions_kids {
+    margin-top: 120px;
+}
+
+.directions_kids_block {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.directions_kids_block div {
+    max-width: 580px;
+    width: 100%;
+    height: 340px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-image: url(../img/kids/3.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.directions_kids_block h4 {
+    font-size: 24px;
+}
+
+.directions_kids_block article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.directions_kids_block p {
+    max-width: 344px;
+    font-size: 20px;
+    color: #858585;
+}
+
+.directions_kids_block a {
+    color: #FE7126;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.boks_school {
+    margin-top: 120px;
+}
+
+.boks_school_block {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.item_kids {
+    background-image: url(../img/kids/3.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
