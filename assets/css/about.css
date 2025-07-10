@@ -41,7 +41,7 @@
     margin-top: 40px;
 }
 
-.reviews_block div {
+.reviews_block div, .yandex_adapt_block_about {
     position: relative;
     max-width: 580px;
     width: 100%;
@@ -57,7 +57,7 @@
     min-height: 280px;
 }
 
-.reviews_block div:first-child {
+.reviews_block div:first-child, .yandex_adapt_block_about {
     background-image: url(../img/about/blot_top_right.png);
     background-repeat: no-repeat;
     background-position: right top;
@@ -178,3 +178,185 @@
     gap: 10px;
 }
 
+.reviews_block_adpt {
+    display: none;
+}
+
+.yandex_adapt_block_about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 240px;
+}
+
+.yandex_adapt_block_about article {
+    display: flex;
+    gap: 10px;
+
+   
+}
+
+.yandex_adapt_block_about article p:first-child {
+    color: rgba(254, 113, 38, 1);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.yandex_adapt_block_about article p:last-child {
+    font-size: 18px;
+}
+
+.yandex_adapt_block_about .yandex_p {
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.yandex_adapt_block_about .yandex_a a {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+.custom-owl-slider {
+    width: 100%;
+    display: block !important; /* Важно для Owl Carousel */
+  }
+  
+  .custom-slide {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Исправлено с 500px на 100% */
+    box-sizing: border-box; /* Чтобы border не увеличивал ширину */
+
+    height: 280px;
+  }
+
+  .map_about_adapt {
+    display: none;
+  }
+
+
+
+
+
+@media(max-width:1250px) {
+    .why_us_block {
+        flex-direction: column;
+    }
+
+    .reviews_block {
+        display: none;
+    }
+
+    .why_us {
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .why_us_block div {
+        flex-direction: column-reverse;
+    }
+
+    .reviews_block_adpt {
+        display: block;
+    }
+
+    .reviews {
+        padding-bottom: 80px;
+    }
+
+    
+
+    
+
+    .yandex_adapt_block_about {
+        max-width: none;
+    }
+
+    
+
+    .map_about_block h2 {
+        text-align: center;
+    }
+
+    .map_about_block p, .map_about_block a {
+        font-size: 16px;
+    }
+
+    .map_about_block svg {
+        max-height: 24px;
+        max-width: 24px;
+    }
+
+    
+}
+
+@media(max-width:600px) {
+
+    .reviews_block_text {
+        font-size: 16px;
+        min-height: 95px;
+    }
+
+    .reviews_block_name_date p {
+        font-size: 14px;
+    }
+
+    .reviews_block_name_date {
+        margin-top: 50px;
+    }
+
+    .custom-slide div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .map_about {
+        background-image: none;
+    }
+
+    .map_about_block {
+        top: 0;
+    }
+
+    .map_about_block {
+        max-width: none;
+    }
+    .why_us_block p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .map_about_adapt {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        display: flex;
+        justify-content: center;
+
+        height: 600px;
+        /* border: solid; */
+        border-radius: 20px;
+    }
+
+    .map_about_adapt img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .footer_form_map {
+        margin-top: 365px;
+    }
+}

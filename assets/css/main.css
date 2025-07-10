@@ -144,6 +144,10 @@ main {
 }
 
 .directions_block div {
+
+    
+
+
     position: relative;
     background-color: white;
     max-width: 580px;
@@ -248,6 +252,11 @@ main {
     background-color: white;
     position: relative;
     overflow: hidden;
+
+
+    background-image: url(../img/blot_second.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .abonements_block_row1_item ul li {
@@ -292,6 +301,8 @@ main {
     grid-template-columns: repeat(2, 1fr);
     border: solid 4px rgba(246, 246, 246, 1);
     border-radius: 10px;
+
+    
 }
 
 .abonements_tab p {
@@ -430,14 +441,14 @@ main {
     color: white;
 }
 
-.controls {
+.controls, .custom-nav{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 40px;
 }
 
-.prev-btn, .next-btn {
+.prev-btn, .next-btn, .custom-prev, .custom-next {
     width: 56px;
     height: 56px;
     display: flex;
@@ -543,7 +554,6 @@ main {
 
 
 .abonements_block_row1_item span {
-    /* display: block; */
     height: 70px;
     max-height: 60px;
     overflow: hidden;
@@ -559,23 +569,30 @@ main {
     border-radius: 35px;
   }
 
+  .school_span.expanded {
+    height: 270px !important;
+    max-height: 270px !important;
+  }
+
+  .adult_span.expanded{
+    height: 120px !important;
+    max-height: 120px !important;
+  }
+
   .abonements_block_row1_item span > div {
     display: flex;
-    /* gap: 70px; */
+    justify-content: space-between;
+    width: 100%;
   } 
 
   .abonements_block_row1_item span > div svg {
     position: relative;
-    /* left: 65%; */
   }
 
   .abonements_block_row1_item span > div p {
     white-space: nowrap;
   }
 
-  /* .ab_list_dn {
-    display: none;
-  } */
 
 
   .ab_list_dn {
@@ -1183,4 +1200,37 @@ main {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .mount1, .mount3, .mount12 {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mount1:hover, .mount3:hover, .mount12:hover {
+    /* color: #333;
+    text-decoration: underline; */
+}
+
+.mount1.active, .mount3.active, .mount12.active {
+    /* font-weight: bold;
+    color: #000; */
+}
 

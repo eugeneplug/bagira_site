@@ -20,3 +20,30 @@ $(document).ready(function () {
         $(".owl-carousel").trigger("prev.owl.carousel");
     });
 });
+
+
+
+$(document).ready(function(){
+    var slider = $('.custom-owl-slider');
+    
+    slider.owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      items: 1, // Всегда показываем 1 слайд
+      responsive:{
+        0:{ items:1 },
+        600:{ items:1 },
+        1000:{ items:1 }
+      }
+    });
+  
+    // Кнопки
+    $('.custom-next').click(function(){
+      slider.trigger('next.owl.carousel');
+    });
+    $('.custom-prev').click(function(){
+      slider.trigger('prev.owl.carousel');
+    });
+  });

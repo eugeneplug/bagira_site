@@ -212,7 +212,7 @@
                         </a></li>
                 </ul>
 
-                <a class="header_mobile_menu_call" href="">Записаться</a>
+                <a onclick="togglePopup()" class="header_mobile_menu_call" href="javascript:void(0)">Записаться</a>
             </div>
 
 
@@ -391,7 +391,7 @@
                 <div class="directions_block">
 
                     <div>
-                        <!-- <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article> -->
+                        <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article>
                         <p>Тренажерный зал</p>
                         <a href="">Подробнее <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -399,11 +399,11 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <!-- <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article> -->
+                        <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article>
                     </div>
 
                     <div>
-                        <!-- <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article> -->
+                        <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article>
                         <p>Фитнесс зал</p>
                         <a href="">Подробнее <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -411,11 +411,11 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <!-- <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article> -->
+                        <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article>
                     </div>
 
                     <div>
-                        <!-- <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article> -->
+                        <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article>
                         <p>Сауны</p>
                         <a href="./saunas/saunas.html">Подробнее <svg width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -423,11 +423,11 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <!-- <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article> -->
+                        <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article>
                     </div>
 
                     <div>
-                        <!-- <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article> -->
+                        <article class="blot blot_left"><img src="./assets/img/blot_left.png" alt=""></article>
                         <p>Зал свободных весов</p>
                         <a href="">Подробнее <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -435,7 +435,7 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <!-- <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article> -->
+                        <article class="blot blot_right"><img src="./assets/img/blot_right.png" alt=""></article>
                     </div>
 
                 </div>
@@ -449,14 +449,14 @@
 
                     <div class="abonements_block_row1">
 
-                        <div class="abonements_block_row1_item">
+                        <div class="abonements_block_row1_item item_pension">
                             <h3>Пенсионный</h3>
 
                             <article>
 
                                 <span>
                                     <div>
-                                        <p>1 месяц</p>
+                                        <p class="mount1">1 месяц</p>
 
                                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -466,9 +466,9 @@
                                         </svg>
                                     </div>
 
-                                    <p class="ab_list_dn">3 месяца</p>
+                                    <p class="ab_list_dn mount3">3 месяца</p>
 
-                                    <p class="ab_list_dn">12 месяцев</p>
+                                    <p class="ab_list_dn mount12">12 месяцев</p>
                                 </span>
 
 
@@ -494,9 +494,9 @@
                                 <p>1 800 ₽</p>
                             </div>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
-                            <img src="./assets/img/blot_second.png" alt="">
+                            <!-- <img src="./assets/img/blot_second.png" alt=""> -->
                         </div>
 
                         <div class="abonements_block_row1_item">
@@ -554,28 +554,38 @@
                                 <p>1 800 ₽</p>
                             </div>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
-                            <img src="./assets/img/blot_second.png" alt="">
+                            <!-- <img src="./assets/img/blot_second.png" alt=""> -->
                         </div>
 
                     </div>
 
                     <div class="abonements_block_row1 abonements_block_row2">
 
-                        <div class="abonements_block_row1_item">
+                        <div class="abonements_block_row1_item item_school">
                             <h3>Школьный</h3>
 
                             <article>
-                                <span>
-                                    <p>1 месяц</p>
+                                <span class="school_span">
+                                    <div>
+                                        <p class="mount1">1 месяц</p>
 
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
-                                            fill="#333433" />
-                                    </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
+                                                fill="#333433" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="ab_list_dn mount11">1 месяц (6:00-15:00)</p>
+
+                                    <p class="ab_list_dn mount3">3 месяца</p>
+
+                                    <p class="ab_list_dn mount6">6 месяцев</p>
+
+                                    <p class="ab_list_dn mount12">12 месяцев</p>
                                 </span>
 
                                 <svg class="abonents_svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
@@ -597,24 +607,34 @@
                                 <p>1 800 ₽</p>
                             </div>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
-                            <img src="./assets/img/blot_second.png" alt="">
+                            <!-- <img src="./assets/img/blot_second.png" alt=""> -->
                         </div>
 
-                        <div class="abonements_block_row1_item">
+                        <div class="abonements_block_row1_item item_student">
                             <h3>Студенческий</h3>
 
                             <article>
-                                <span>
-                                    <p>1 месяц</p>
+                                <span class="school_span">
+                                    <div>
+                                        <p class="mount1">1 месяц</p>
 
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
-                                            fill="#333433" />
-                                    </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
+                                                fill="#333433" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="ab_list_dn mount11">1 месяц (6:00-15:00)</p>
+
+                                    <p class="ab_list_dn mount3">3 месяца</p>
+
+                                    <p class="ab_list_dn mount6">6 месяцев</p>
+
+                                    <p class="ab_list_dn mount12">12 месяцев</p>
                                 </span>
 
                                 <svg class="abonents_svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
@@ -641,24 +661,30 @@
                                 <p>1 800 ₽</p>
                             </div>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
-                            <img src="./assets/img/blot_second.png" alt="">
+                            <!-- <img src="./assets/img/blot_second.png" alt=""> -->
                         </div>
 
-                        <div class="abonements_block_row1_item">
+                        <div class="abonements_block_row1_item item_adult">
                             <h3>Взрослый</h3>
 
                             <article>
-                                <span>
-                                    <p>1 месяц</p>
+                                <span class="adult_span">
+                                    <div>
+                                        <p class="mount1">1 месяц</p>
 
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
-                                            fill="#333433" />
-                                    </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.4632 18.2734C14.207 18.5297 13.7915 18.5297 13.5352 18.2734L6.84455 11.5827C6.58827 11.3264 6.58827 10.911 6.84455 10.6547L7.15392 10.3453C7.4102 10.089 7.82571 10.089 8.082 10.3453L13.9992 16.2626L19.9165 10.3453C20.1728 10.089 20.5882 10.089 20.8445 10.3453L21.1539 10.6547C21.4102 10.911 21.4102 11.3264 21.1539 11.5827L14.4632 18.2734Z"
+                                                fill="#333433" />
+                                        </svg>
+                                    </div>
+
+                                    <p class="ab_list_dn mount3">3 месяца</p>
+
+                                    <!-- <p class="ab_list_dn mount12">12 месяцев</p> -->
                                 </span>
 
                                 <svg class="abonents_svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
@@ -686,9 +712,9 @@
                                 <p>1 800 ₽</p>
                             </div>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
-                            <img src="./assets/img/blot_second.png" alt="">
+                            <!-- <img src="./assets/img/blot_second.png" alt=""> -->
                         </div>
                     </div>
 
@@ -717,7 +743,7 @@
                                 <li>Индивидуальный подход</li>
                             </ul>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
                         </div>
 
@@ -738,7 +764,7 @@
                                 <li>Персональная тренировка в подарок</li>
                             </ul>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
                         </div>
 
@@ -759,7 +785,7 @@
                                 <li>Сауна «Спорт»</li>
                             </ul>
 
-                            <a href="">Записаться</a>
+                            <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
                         </div>
                     </div>
@@ -882,7 +908,7 @@
 
                         </article>
 
-                        <a href="">Записаться</a>
+                        <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
 
 
 
@@ -1003,7 +1029,7 @@
                                     fill="#F6F6F6" />
                             </svg>
                         </a>
-                        <a href="">Записаться</a>
+                        <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
                     </div>
                 </div>
 
@@ -1011,7 +1037,7 @@
 
                     <div>
                         <ul>
-                            <li><a href="">Главная</a></li>
+                            <li><a href="/">Главная</a></li>
                             <li><a href="">Тренажерный зал</a></li>
                             <li><a href="./club_cards.html">Клубные карты</a></li>
                             <li><a href="./kids_section.html">Детские секции</a></li>
@@ -1021,7 +1047,7 @@
                     <div>
                         <ul>
                             <li><a href="">Расписание занятий</a></li>
-                            <li><a href="">О компании</a></li>
+                            <li><a href="./about.html">О компании</a></li>
                             <li><a href="">Отзывы</a></li>
                             <li><a href="">Контакты</a></li>
                         </ul>
@@ -1029,10 +1055,10 @@
 
                     <div>
                         <ul>
-                            <li><a href="">Сауна Индия</a></li>
-                            <li><a href="">Сауна Космос</a></li>
-                            <li><a href="">Сауна Грот</a></li>
-                            <li><a href="">Сауна Спорт</a></li>
+                            <li><a href="./saunas/india.html">Сауна Индия</a></li>
+                            <li><a href="./saunas/cosmic.html">Сауна Космос</a></li>
+                            <li><a href="./saunas/grot.html">Сауна Грот</a></li>
+                            <li><a href="./saunas/sport.html">Сауна Спорт</a></li>
                         </ul>
                     </div>
 
@@ -1062,13 +1088,13 @@
                             </li>
 
                             <li>
-                                <a href="tel:2355131">
+                                <a href="tel:89504373440">
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M18.744 11.0024C18.4989 11.0024 18.2639 10.9051 18.0906 10.7318C17.9173 10.5585 17.82 10.3235 17.82 10.0784C17.82 9.6344 17.376 8.7104 16.632 7.9064C15.9 7.1264 15.096 6.6704 14.424 6.6704C14.1789 6.6704 13.9439 6.57305 13.7706 6.39977C13.5974 6.22648 13.5 5.99146 13.5 5.7464C13.5 5.2424 13.92 4.8224 14.424 4.8224C15.624 4.8224 16.884 5.4704 17.988 6.6344C19.02 7.7264 19.68 9.0824 19.68 10.0664C19.68 10.5824 19.26 11.0024 18.744 11.0024ZM23.076 11C22.8309 11 22.5959 10.9027 22.4226 10.7294C22.2494 10.5561 22.152 10.3211 22.152 10.076C22.152 5.816 18.684 2.36 14.436 2.36C14.1909 2.36 13.9559 2.26265 13.7826 2.08937C13.6094 1.91608 13.512 1.68106 13.512 1.436C13.512 0.932 13.92 0.5 14.424 0.5C19.704 0.5 24 4.796 24 10.076C24 10.58 23.58 11 23.076 11ZM10.86 16.04L8.64 18.26C8.172 18.728 7.428 18.728 6.948 18.272C6.816 18.14 6.684 18.02 6.552 17.888C5.33852 16.6664 4.21932 15.3547 3.204 13.964C2.22 12.596 1.428 11.228 0.852 9.872C0.288 8.504 0 7.196 0 5.948C0 5.132 0.144 4.352 0.432 3.632C0.72 2.9 1.176 2.228 1.812 1.628C2.58 0.872 3.42 0.5 4.308 0.5C4.644 0.5 4.98 0.572 5.28 0.716C5.592 0.86 5.868 1.076 6.084 1.388L8.868 5.312C9.084 5.612 9.24 5.888 9.348 6.152C9.456 6.404 9.516 6.656 9.516 6.884C9.516 7.172 9.432 7.46 9.264 7.736C9.108 8.012 8.88 8.3 8.592 8.588L7.68 9.536C7.548 9.668 7.488 9.824 7.488 10.016C7.488 10.112 7.5 10.196 7.524 10.292C7.56 10.388 7.596 10.46 7.62 10.532C7.836 10.928 8.208 11.444 8.736 12.068C9.276 12.692 9.852 13.328 10.476 13.964C10.596 14.084 10.728 14.204 10.848 14.324C11.328 14.792 11.34 15.56 10.86 16.04ZM23.964 20.096C23.9624 20.5489 23.8599 20.9957 23.664 21.404C23.46 21.836 23.196 22.244 22.848 22.628C22.26 23.276 21.612 23.744 20.88 24.044C20.868 24.044 20.856 24.056 20.844 24.056C20.136 24.344 19.368 24.5 18.54 24.5C17.316 24.5 16.008 24.212 14.628 23.624C13.248 23.036 11.868 22.244 10.5 21.248C10.032 20.9 9.564 20.552 9.12 20.18L13.044 16.256C13.38 16.508 13.68 16.7 13.932 16.832C13.992 16.856 14.064 16.892 14.148 16.928C14.244 16.964 14.34 16.976 14.448 16.976C14.652 16.976 14.808 16.904 14.94 16.772L15.852 15.872C16.152 15.572 16.44 15.344 16.716 15.2C16.992 15.032 17.268 14.948 17.568 14.948C17.796 14.948 18.036 14.996 18.3 15.104C18.564 15.212 18.84 15.368 19.14 15.572L23.112 18.392C23.424 18.608 23.64 18.86 23.772 19.16C23.892 19.46 23.964 19.76 23.964 20.096Z"
                                             fill="#F6F6F6" />
-                                    </svg> 23 55 131
+                                    </svg> 8 950 437 34 40
                                 </a>
                             </li>
 
