@@ -802,12 +802,13 @@ main {
     }
 
     .owl-carousel .owl-item img {
-        display: none !important;
+        /* display: none !important; */
+        height: 100%;
     }
 
     .prev-btn, .next-btn {
-        width: 42px;
-        height: 42px;
+        /* width: 42px;
+        height: 42px; */
     }
 
     

@@ -174,3 +174,42 @@
 .main_sport {
     background-image: url(../img/sauna3.webp);
 }
+
+/**/
+
+.sauna_pics_mobile {
+    display: none;
+}
+
+
+
+@media (max-width:900px) {
+    .sauna_pics_mobile {
+        display: block;
+    }
+
+    .sauna_pics {
+        display: none;
+    }
+
+    .akcii_content {
+        padding-bottom: 80px;
+    }
+
+    .sauna_pics_mobile img {
+        display: block !important;
+        border-radius: 20px;
+    }
+
+    .sauna_pics_mobile {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+
+    }
+
+    .sauna_pics_mobile .custom-owl-slider {
+        margin-top: 20px;
+    }
+}
