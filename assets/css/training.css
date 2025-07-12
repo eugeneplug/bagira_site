@@ -11,11 +11,14 @@
 
 .training_content_block {
     width: auto;
-    height: 635px;
+    /* height: 635px; */
     padding: 40px;
     box-sizing: border-box;
     background-color: rgba(246, 246, 246, 1);
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .training_content_block h3 {
@@ -46,12 +49,54 @@
 }
 
 .training_content_block_row div:hover {
-    border: solid 2px rgba(254, 113, 38, 1);
+    /* border: solid 2px rgba(254, 113, 38, 1);
     padding: 18px;
-    transition: 0.10s;
+    transition: 0.10s; */
 }
 
 .training_content_block_row p {
     font-size: 24px;
     font-weight: 600;
 }
+
+/**/
+
+.training_content_block_row_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.training_content_block_row_btns div {
+    font-size: 20px;
+    font-weight: 600;
+
+    border-radius: 200px;
+    border-top:  solid rgba(254, 113, 38, 1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.training_content_block_row_btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgba(246, 246, 246, 1);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/**/
+
+.training_content_block_row div.active {
+    border: solid 2px rgba(254, 113, 38, 1);
+  }

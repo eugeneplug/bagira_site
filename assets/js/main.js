@@ -280,3 +280,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /**/
 
+let tr_item1 = document.getElementById('tr_item1');
+let tr_item2 = document.getElementById('tr_item2');
+let tr_item3 = document.getElementById('tr_item3');
+let tr_item4 = document.getElementById('tr_item4');
+let tr_item5 = document.getElementById('tr_item5');
+
+// Функция для снятия active со всех элементов
+function removeActiveClass() {
+  [tr_item1, tr_item2, tr_item3, tr_item4, tr_item5].forEach(item => {
+      item.classList.remove('active');
+  });
+}
+
+// Назначаем обработчики клика
+tr_item1.addEventListener('click', () => {
+  removeActiveClass();
+  tr_item1.classList.add('active');
+});
+
+tr_item2.addEventListener('click', () => {
+  removeActiveClass();
+  tr_item2.classList.add('active');
+});
+
+tr_item3.addEventListener('click', () => {
+  removeActiveClass();
+  tr_item3.classList.add('active');
+});
+
+tr_item4.addEventListener('click', () => {
+  removeActiveClass();
+  tr_item4.classList.add('active');
+});
+
+tr_item5.addEventListener('click', () => {
+  removeActiveClass();
+  tr_item5.classList.add('active');
+});
