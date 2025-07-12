@@ -1,0 +1,57 @@
+.main_training {
+    background-image: url(../img/training_main.webp);
+    background-position: center;
+    border-radius: 0;
+    height: 1130px;
+}
+
+.training_content {
+    margin-top: 40px;
+}
+
+.training_content_block {
+    width: auto;
+    height: 635px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgba(246, 246, 246, 1);
+    border-radius: 20px;
+}
+
+.training_content_block h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.training_content_block_row {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+
+.training_content_block_row1 div {
+    max-width: 540px;
+}
+
+.training_content_block_row div {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.10s;
+}
+
+.training_content_block_row div:hover {
+    border: solid 2px rgba(254, 113, 38, 1);
+    padding: 18px;
+    transition: 0.10s;
+}
+
+.training_content_block_row p {
+    font-size: 24px;
+    font-weight: 600;
+}

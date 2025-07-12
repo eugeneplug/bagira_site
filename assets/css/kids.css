@@ -123,6 +123,13 @@
     padding-bottom: 0 !important;
 }
 
+.box_pics_mobile img {
+    object-fit: cover;
+}
+
+.box_pics_mobile .custom-slide {
+    padding: 0;
+}
 @media (max-width:900px) {
     .wrapper_club .main_text_under {
         font-size: 18px;
@@ -173,11 +180,19 @@
     }
 
     .main_club {
-        height: 100vh;
+        height: 800px;
     }
 
     .boks_school {
         margin-top: 80px;
+    }
+
+    .boks_school_block {
+        flex-direction: column;
+    }
+
+    .abonements_block_row1_item {
+        width: auto;
     }
 }
 @media (max-width:500px) {

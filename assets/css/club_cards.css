@@ -269,3 +269,33 @@
     font-size: 20px;
     border-radius: 100px;
   }
+
+  /**/
+
+  /* .club_openOne {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .club_openTwo {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .club_openOne.active {
+    opacity: 1;
+    pointer-events: auto; 
+  }
+
+  .club_openTwo.active {
+    opacity: 1;
+    pointer-events: auto; 
+  } */
+
+  /* .club_open_itog_summ_block {
+    display: none;
+  } */
+
+  /* .club_open_itog_summ_block.active {
+    display: flex;
+  } */

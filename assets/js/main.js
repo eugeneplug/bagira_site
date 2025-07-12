@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// JavaScript
+// JavaScript POPUP
 function togglePopup() {
   document.querySelector('.popUp_call').classList.toggle('active');
   document.querySelector('.wrapper').classList.toggle('active');
@@ -243,13 +243,40 @@ function closePopup() {
 }
 
 // Закрытие по клику на оверлей
-document.getElementById('popupOverlay').addEventListener('click', function (e) {
-  if (e.target === this) {
-    closePopup();
+document.addEventListener('DOMContentLoaded', function () {
+  const popupOverlay = document.getElementById('popupOverlay');
+  if (popupOverlay) {
+    popupOverlay.addEventListener('click', function (e) {
+      if (e.target === this) {
+        closePopup();
+      }
+    });
   }
 });
 
 
 
 
+
+// JavaScript cards open
+
+// function toogleCard() {
+//   document.querySelector('.club_openOne').classList.toggle('active');
+//   document.querySelector('.club_open_itog_summ_block').classList.add('active');
+
+ 
+
+
+// }
+
+// function toogleCard2() {
+//   document.querySelector('.club_openTwo').classList.toggle('active');
+//   document.querySelector('.club_open_itog_summ_block').classList.add('active');
+
+//   itemCard1.click()
+
+// }
+
+
+/**/
 
