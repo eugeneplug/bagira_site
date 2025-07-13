@@ -318,3 +318,96 @@ tr_item5.addEventListener('click', () => {
   removeActiveClass();
   tr_item5.classList.add('active');
 });
+
+
+
+
+
+
+
+
+
+let currentBlock = 1;
+const totalBlocks = 3;
+
+// Функция для проверки выбора в текущем блоке
+function checkSelection() {
+  const nextBtn = document.querySelector('.train_next');
+  let isSelected = false;
+  
+  // Проверяем выбор в зависимости от текущего блока
+  switch(currentBlock) {
+    case 1:
+      isSelected = document.querySelector('.training_content_block_row div.selected') !== null;
+      break;
+    case 2:
+      // Аналогичная проверка для второго блока
+      // isSelected = /* ваше условие для второго блока */;
+      break;
+    case 3:
+      // Аналогичная проверка для третьего блока
+      // isSelected = /* ваше условие для третьего блока */;
+      break;
+  }
+  
+  if (nextBtn) nextBtn.disabled = !isSelected;
+}
+
+// Обработчик клика по элементам выбора
+function setupSelectionHandlers() {
+  // Для первого блока
+  const selectableItems = document.querySelectorAll('.training_content_block_row div');
+  selectableItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Удаляем класс selected у всех элементов
+      selectableItems.forEach(el => el.classList.remove('selected'));
+      // Добавляем класс selected к текущему элементу
+      this.classList.add('selected');
+      // Проверяем выбор
+      checkSelection();
+    });
+  });
+  
+  // Аналогично для других блоков...
+}
+
+function showBlock(blockNumber) {
+  // Скрываем все блоки
+  for (let i = 1; i <= totalBlocks; i++) {
+    document.querySelector(`.train_block${i}`).style.display = 'none';
+  }
+  
+  // Показываем нужный блок
+  document.querySelector(`.train_block${blockNumber}`).style.display = 'block';
+  currentBlock = blockNumber;
+  
+  // Обновляем кнопки
+  const prevBtn = document.querySelector('.train_prev');
+  const nextBtn = document.querySelector('.train_next');
+  
+  if (prevBtn) prevBtn.disabled = (currentBlock === 1);
+  if (nextBtn) {
+    nextBtn.disabled = true; // По умолчанию кнопка "Далее" неактивна
+    checkSelection(); // Проверяем выбор
+  }
+  
+  // Настраиваем обработчики выбора для текущего блока
+  setupSelectionHandlers();
+}
+
+function nextBlock() {
+  if (currentBlock < totalBlocks) {
+    showBlock(currentBlock + 1);
+  }
+}
+
+function prevBlock() {
+  if (currentBlock > 1) {
+    showBlock(currentBlock - 1);
+  }
+}
+
+// Инициализация
+document.addEventListener('DOMContentLoaded', function() {
+  showBlock(1);
+});

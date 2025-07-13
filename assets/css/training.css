@@ -34,6 +34,10 @@
     gap: 20px;
 }
 
+.training_content_block_row1 {
+    padding-bottom: 0;
+}
+
 .training_content_block_row1 div {
     max-width: 540px;
 }
@@ -46,6 +50,10 @@
     border-radius: 20px;
     cursor: pointer;
     transition: 0.10s;
+
+    box-shadow:
+        0 0 9.6px 0 rgba(50, 52, 51, 0.05),
+        0 0 9.6px 0 rgba(50, 52, 51, 0.05);
 }
 
 .training_content_block_row div:hover {
@@ -70,6 +78,9 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    margin-top: 20px;
+
+    position: relative;
 }
 
 
@@ -79,9 +90,12 @@
     font-weight: 600;
 
     border-radius: 200px;
-    border-top:  solid rgba(254, 113, 38, 1);
+    /* border-top: solid rgba(254, 113, 38, 1); */
     padding: 20px;
     box-sizing: border-box;
+
+    width: 64px;
+    height: 64px;
 }
 
 .training_content_block_row_btns button {
@@ -93,10 +107,200 @@
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    gap: 10px;
 }
+
+.train_prev {
+    position: absolute;
+    left: 120px;
+}
+
+/* .tr_data2 {
+    border-right: solid rgba(254, 113, 38, 1);
+}
+
+.tr_data3 {
+    border: solid rgba(254, 113, 38, 1);
+} */
+
+
+
 
 /**/
 
 .training_content_block_row div.active {
     border: solid 2px rgba(254, 113, 38, 1);
-  }
+    padding: 18px;
+}
+
+/**/
+
+.train_block2 {
+    display: none;
+}
+
+.train_block3 {
+    display: none;
+}
+
+
+
+
+
+
+.training_content_block_row div {
+    cursor: pointer;
+    /* ваши стили */
+}
+
+.training_content_block_row div.selected {
+    /* background-color: #e0e0e0; */
+    /* стили для выбранного элемента */
+}
+
+
+
+
+.train_block2 select {
+    width: 100%;
+    height: 174px;
+    border: rgba(254, 113, 38, 1) solid 2px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+
+    background-image: url(../img/blot.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    /* border: none; */
+    margin-bottom: 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.train_block2 select option {
+    font-size: 24px;
+    font-weight: 600;
+
+
+}
+
+/**/
+
+.training_content_block_form {
+    margin-top: 40px;
+}
+
+.training_content_block_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: relative;
+}
+
+.training_content_block_form form input {
+    width: auto;
+    height: 78px;
+    background-color: white;
+    border-radius: 100px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+}
+
+.training_content_block_form form input:focus {
+    /* border: rgba(254, 113, 38, 1) solid 2px; */
+    /* border: none; */
+}
+
+.training_content_block_form form input:focus {
+    border: rgba(254, 113, 38, 1) solid 2px;
+    outline: none;
+    /* Убирает стандартный синий/черный outline в некоторых браузерах */
+}
+
+.train_submit {
+    max-width: 789px;
+    width: 100%;
+
+    height: 64px;
+    border-radius: 100px;
+    background-color: rgba(254, 113, 38, 1) !important;
+    color: white;
+
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    /* position: absolute;
+    top: 321px; */
+}
+
+.train_block3_btns {
+    margin-top: 40px;
+}
+
+.spanPop_train {
+    margin-top: 40px;
+}
+
+.tr_data {
+    position: relative;
+}
+
+.tr_data1::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 51px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="32" height="51" viewBox="0 0 32 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.6C0 0.716347 0.716827 -0.00417328 1.59938 0.0399857C6.94297 0.307362 12.1436 1.91111 16.72 4.71552C21.7518 7.79905 25.833 12.214 28.5122 17.4723C31.1914 22.7306 32.3644 28.6274 31.9014 34.5107C31.4802 39.8614 29.7209 45.0115 26.7963 49.4917C26.3133 50.2317 25.309 50.3881 24.5941 49.8687C23.8792 49.3493 23.7248 48.3509 24.2038 47.6083C26.7837 43.6076 28.3364 39.0219 28.7112 34.2596C29.1279 28.9646 28.0723 23.6575 25.661 18.9251C23.2497 14.1926 19.5766 10.2191 15.048 7.44396C10.9749 4.94797 6.35232 3.50874 1.59924 3.24443C0.716946 3.19537 0 2.48365 0 1.6Z" fill="%23FE7126"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+.tr_data2::after {
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="62" height="64" viewBox="0 0 62 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 1.6C30 0.716347 30.7168 -0.00417328 31.5994 0.0399857C36.943 0.307362 42.1436 1.91111 46.72 4.71552C51.7518 7.79905 55.833 12.214 58.5122 17.4723C61.1914 22.7306 62.3644 28.6274 61.9014 34.5107C61.4383 40.394 59.3574 46.0347 55.8885 50.8091C52.4197 55.5836 47.6982 59.3057 42.2459 61.5641C36.7936 63.8226 30.823 64.5292 24.9941 63.606C19.1652 62.6828 13.7052 60.1657 9.21766 56.333C5.13635 52.8472 2.00401 48.3967 0.0984578 43.3973C-0.216264 42.5716 0.247477 41.6672 1.08788 41.3941C1.92829 41.1211 2.82671 41.583 3.14602 42.4069C4.86618 46.8457 7.66341 50.7973 11.2959 53.8997C15.3347 57.3491 20.2487 59.6145 25.4947 60.4454C30.7407 61.2763 36.1142 60.6403 41.0213 58.6077C45.9283 56.5752 50.1777 53.2252 53.2997 48.9282C56.4216 44.6312 58.2945 39.5546 58.7112 34.2596C59.1279 28.9646 58.0723 23.6575 55.661 18.9251C53.2497 14.1926 49.5766 10.2191 45.048 7.44396C40.9749 4.94797 36.3523 3.50874 31.5992 3.24443C30.7169 3.19537 30 2.48365 30 1.6Z" fill="%23FE7126"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+
+    position: absolute;
+    top: -10px;
+    right: -5px;
+}
+
+
+.tr_data3::after {
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 1.6C32 0.716347 32.7169 -0.00417328 33.5994 0.0399666C41.0741 0.413811 48.2012 3.39865 53.7216 8.50168C59.6346 13.9676 63.2696 21.4618 63.9014 29.4893C64.5331 37.5168 62.1153 45.4874 57.1301 51.811C52.145 58.1346 44.9591 62.3464 37.0059 63.606C29.0527 64.8657 20.917 63.0807 14.2218 58.607C7.5265 54.1334 2.76394 47.3001 0.884162 39.4703C-0.995612 31.6404 0.145598 23.3897 4.08013 16.3641C7.75344 9.80495 13.6094 4.7638 20.6026 2.09846C21.4284 1.78375 22.3328 2.24747 22.6059 3.08788C22.879 3.92829 22.4169 4.82675 21.593 5.14604C15.365 7.55941 10.1519 12.0712 6.87212 17.9277C3.33104 24.2508 2.30395 31.6764 3.99575 38.7232C5.68754 45.7701 9.97385 51.9201 15.9996 55.9463C22.0253 59.9726 29.3475 61.5791 36.5053 60.4454C43.6632 59.3117 50.1305 55.5212 54.6171 49.8299C59.1037 44.1387 61.2798 36.9651 60.7112 29.7404C60.1426 22.5156 56.8712 15.7708 51.5495 10.8515C46.6205 6.29519 40.2682 3.61512 33.5994 3.24441C32.7171 3.19537 32 2.48365 32 1.6Z' fill='%23FE7126'/%3E%3C/svg%3E");
+   
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+
+    position: absolute;
+    top: -10px;
+    right: -5px;
+}
