@@ -361,8 +361,15 @@
     }
 
     .training_content_block_row_btns {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
+    }
+
+    .tr_data2 {
+        position: relative;
+
+        top: -29px;
+        left: -13px;
     }
 
     
