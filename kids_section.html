@@ -46,7 +46,7 @@
 
             <div class="header_top_wrapper">
                 <div class="header_top">
-                    <a href="/index.html"><img src="./assets/img/logo.svg" alt=""></a>
+                    <a href="./index.html"><img src="./assets/img/logo.svg" alt=""></a>
                     <div>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -65,7 +65,7 @@
                                 fill="#F9F9F9" />
                         </svg>
 
-                        <p>23 55 131</p>
+                        <p><a style="color: black;" href="tel:2355131">23 55 131</a></p>
 
                     </div>
 
@@ -76,13 +76,13 @@
                                 fill="#F9F9F9" />
                         </svg>
 
-                        <p>8 950 437 34 40</p>
+                        <p><a style="color: black;" href="tel:89504373440">8 950 437 34 40</a></p>
                     </div>
 
-                    <a class="header_link" href="">Записаться</a>
+                    <a onclick="togglePopup()" class="header_link" href="javascript:void(0)">Записаться</a>
 
-                    <a href=""><svg class="header_vk" width="36" height="36" viewBox="0 0 36 36" fill=""
-                            xmlns="http://www.w3.org/2000/svg">
+                    <a target="_blank" href="https://vk.com/bagira24ru"><svg style="filter: none;" width="36" height="36" viewBox="0 0 36 36"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M3.415 3.415C1 5.853 1 9.7515 1 17.56V18.94C1 26.737 1 30.6355 3.415 33.085C5.853 35.5 9.7515 35.5 17.56 35.5H18.94C26.737 35.5 30.6355 35.5 33.085 33.085C35.5 30.647 35.5 26.7485 35.5 18.94V17.56C35.5 9.763 35.5 5.8645 33.085 3.415C30.647 1 26.7485 1 18.94 1H17.56C9.763 1 5.8645 1 3.415 3.415ZM6.819 11.4995H10.775C10.9015 18.0775 13.7995 20.8605 16.0995 21.4355V11.4995H19.814V17.169C22.0795 16.9275 24.4715 14.34 25.2765 11.488H28.9795C28.6773 12.9642 28.0741 14.3624 27.2075 15.5951C26.3408 16.8278 25.2294 17.8686 23.9425 18.6525C25.3789 19.3672 26.6474 20.3783 27.6644 21.6193C28.6813 22.8602 29.4235 24.3027 29.842 25.8515H25.7595C24.8855 23.126 22.7005 21.01 19.814 20.7225V25.8515H19.354C11.488 25.8515 7.003 20.4695 6.819 11.4995Z"
                                 fill="#0077FF" />
@@ -119,19 +119,19 @@
                 <ul>
 
                     <li>
-                        <a href="">Тренажерный зал</a>
+                        <a href="./training.html">Тренажерный зал</a>
                     </li>
 
                     <li>
-                        <a href="">Клубные карты</a>
+                        <a href="./club_cards.html">Клубные карты</a>
                     </li>
 
                     <li>
-                        <a href="">Детские секции</a>
+                        <a href="./kids_section.html">Детские секции</a>
                     </li>
 
                     <li>
-                        <a href="">Расписание</a>
+                        <a href="./calendar.html">Расписание</a>
                     </li>
 
                     <li class="header_saunas_link">
@@ -152,7 +152,7 @@
                     </li>
 
                     <li>
-                        <a href="">О компании</a>
+                        <a href="./about.html">О компании</a>
                     </li>
 
                 </ul>
@@ -161,11 +161,11 @@
 
             <div class="header_mobile_menu">
                 <ul class="header_mobile_menu_list">
-                    <li class="header_mobile_menu_list_main"><a href="">Главная</a></li>
-                    <li><a href="">Тренажерный зал</a></li>
-                    <li><a href="">Клубные карты</a></li>
-                    <li><a href="">Детские секции</a></li>
-                    <li><a href="">Расписание</a></li>
+                    <li class="header_mobile_menu_list_main"><a href="./index.html">Главная</a></li>
+                    <li><a href="./training.html">Тренажерный зал</a></li>
+                    <li><a href="./club_cards.html">Клубные карты</a></li>
+                    <li><a href="./kids_section.html">Детские секции</a></li>
+                    <li><a href="./calendar.html">Расписание</a></li>
                     <li class=""><a href="./saunas/saunas.html">Сауны
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -216,8 +216,11 @@
                         </a></li>
                 </ul>
 
-                <a class="header_mobile_menu_call" href="">Записаться</a>
+                <a onclick="togglePopup()" class="header_mobile_menu_call" href="javascript:void(0)">Записаться</a>
             </div>
+
+
+
 
 
 
@@ -502,7 +505,9 @@
                         <form method="post" action="">
                             <input type="text" placeholder="Имя и фамилия">
                             <input type="text" placeholder="Номер телефона">
-                            <div>Куда хотите записаться?
+
+
+                            <!-- <div>Куда хотите записаться?
                                 <svg width="24" height="38" viewBox="0 0 24 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.6">
@@ -510,7 +515,10 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </g>
                                 </svg>
-                            </div>
+                            </div> -->
+
+
+
                             <button type="submit">Отправить</button>
                             <span>
 
@@ -549,7 +557,7 @@
             <div class="container">
 
                 <div class="footer_row">
-                    <a href="/">
+                    <a href="./index.html">
                         <svg width="317" height="97" viewBox="0 0 317 97" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="317" height="97" fill="url(#pattern0_96_502)" />
@@ -566,14 +574,14 @@
                     </a>
 
                     <div class="footer_links">
-                        <a href=""><svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                        <a href="https://vk.com/bagira24ru" target="_blank"><svg width="35" height="35" viewBox="0 0 35 35" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.415 2.665C4.56969e-07 5.103 0 9.0015 0 16.81V18.19C0 25.987 4.56969e-07 29.8855 2.415 32.335C4.853 34.75 8.7515 34.75 16.56 34.75H17.94C25.737 34.75 29.6355 34.75 32.085 32.335C34.5 29.897 34.5 25.9985 34.5 18.19V16.81C34.5 9.013 34.5 5.1145 32.085 2.665C29.647 0.25 25.7485 0.25 17.94 0.25H16.56C8.763 0.25 4.8645 0.25 2.415 2.665ZM5.819 10.7495H9.775C9.9015 17.3275 12.7995 20.1105 15.0995 20.6855V10.7495H18.814V16.419C21.0795 16.1775 23.4715 13.59 24.2765 10.738H27.9795C27.6773 12.2142 27.0741 13.6124 26.2075 14.8451C25.3408 16.0778 24.2294 17.1186 22.9425 17.9025C24.3789 18.6172 25.6474 19.6283 26.6644 20.8693C27.6813 22.1102 28.4235 23.5527 28.842 25.1015H24.7595C23.8855 22.376 21.7005 20.26 18.814 19.9725V25.1015H18.354C10.488 25.1015 6.003 19.7195 5.819 10.7495Z"
                                     fill="#F6F6F6" />
                             </svg>
                         </a>
-                        <a href="">Записаться</a>
+                        <a onclick="togglePopup()" href="javascript:void(0)">Записаться</a>
                     </div>
                 </div>
 
@@ -581,28 +589,28 @@
 
                     <div>
                         <ul>
-                            <li><a href="">Главная</a></li>
-                            <li><a href="">Тренажерный зал</a></li>
-                            <li><a href="">Клубные карты</a></li>
-                            <li><a href="">Детские секции</a></li>
+                            <li><a href="./index.html">Главная</a></li>
+                            <li><a href="./training.html">Тренажерный зал</a></li>
+                            <li><a href="./club_cards.html">Клубные карты</a></li>
+                            <li><a href="./kids_section.html">Детские секции</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <ul>
-                            <li><a href="">Расписание занятий</a></li>
-                            <li><a href="">О компании</a></li>
-                            <li><a href="">Отзывы</a></li>
-                            <li><a href="">Контакты</a></li>
+                            <li><a href="./calendar.html">Расписание занятий</a></li>
+                            <li><a href="./about.html">О компании</a></li>
+                            <li><a href="./about.html#link_rew">Отзывы</a></li>
+                            <li><a href="./about.html#link_contacts">Контакты</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <ul>
-                            <li><a href="">Сауна Индия</a></li>
-                            <li><a href="">Сауна Космос</a></li>
-                            <li><a href="">Сауна Грот</a></li>
-                            <li><a href="">Сауна Спорт</a></li>
+                            <li><a href="./saunas/india.html">Сауна Индия</a></li>
+                            <li><a href="./saunas/cosmic.html">Сауна Космос</a></li>
+                            <li><a href="./saunas/grot.html">Сауна Грот</a></li>
+                            <li><a href="./saunas/sport.html">Сауна Спорт</a></li>
                         </ul>
                     </div>
 
@@ -632,13 +640,13 @@
                             </li>
 
                             <li>
-                                <a href="tel:2355131">
+                                <a href="tel:89504373440">
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M18.744 11.0024C18.4989 11.0024 18.2639 10.9051 18.0906 10.7318C17.9173 10.5585 17.82 10.3235 17.82 10.0784C17.82 9.6344 17.376 8.7104 16.632 7.9064C15.9 7.1264 15.096 6.6704 14.424 6.6704C14.1789 6.6704 13.9439 6.57305 13.7706 6.39977C13.5974 6.22648 13.5 5.99146 13.5 5.7464C13.5 5.2424 13.92 4.8224 14.424 4.8224C15.624 4.8224 16.884 5.4704 17.988 6.6344C19.02 7.7264 19.68 9.0824 19.68 10.0664C19.68 10.5824 19.26 11.0024 18.744 11.0024ZM23.076 11C22.8309 11 22.5959 10.9027 22.4226 10.7294C22.2494 10.5561 22.152 10.3211 22.152 10.076C22.152 5.816 18.684 2.36 14.436 2.36C14.1909 2.36 13.9559 2.26265 13.7826 2.08937C13.6094 1.91608 13.512 1.68106 13.512 1.436C13.512 0.932 13.92 0.5 14.424 0.5C19.704 0.5 24 4.796 24 10.076C24 10.58 23.58 11 23.076 11ZM10.86 16.04L8.64 18.26C8.172 18.728 7.428 18.728 6.948 18.272C6.816 18.14 6.684 18.02 6.552 17.888C5.33852 16.6664 4.21932 15.3547 3.204 13.964C2.22 12.596 1.428 11.228 0.852 9.872C0.288 8.504 0 7.196 0 5.948C0 5.132 0.144 4.352 0.432 3.632C0.72 2.9 1.176 2.228 1.812 1.628C2.58 0.872 3.42 0.5 4.308 0.5C4.644 0.5 4.98 0.572 5.28 0.716C5.592 0.86 5.868 1.076 6.084 1.388L8.868 5.312C9.084 5.612 9.24 5.888 9.348 6.152C9.456 6.404 9.516 6.656 9.516 6.884C9.516 7.172 9.432 7.46 9.264 7.736C9.108 8.012 8.88 8.3 8.592 8.588L7.68 9.536C7.548 9.668 7.488 9.824 7.488 10.016C7.488 10.112 7.5 10.196 7.524 10.292C7.56 10.388 7.596 10.46 7.62 10.532C7.836 10.928 8.208 11.444 8.736 12.068C9.276 12.692 9.852 13.328 10.476 13.964C10.596 14.084 10.728 14.204 10.848 14.324C11.328 14.792 11.34 15.56 10.86 16.04ZM23.964 20.096C23.9624 20.5489 23.8599 20.9957 23.664 21.404C23.46 21.836 23.196 22.244 22.848 22.628C22.26 23.276 21.612 23.744 20.88 24.044C20.868 24.044 20.856 24.056 20.844 24.056C20.136 24.344 19.368 24.5 18.54 24.5C17.316 24.5 16.008 24.212 14.628 23.624C13.248 23.036 11.868 22.244 10.5 21.248C10.032 20.9 9.564 20.552 9.12 20.18L13.044 16.256C13.38 16.508 13.68 16.7 13.932 16.832C13.992 16.856 14.064 16.892 14.148 16.928C14.244 16.964 14.34 16.976 14.448 16.976C14.652 16.976 14.808 16.904 14.94 16.772L15.852 15.872C16.152 15.572 16.44 15.344 16.716 15.2C16.992 15.032 17.268 14.948 17.568 14.948C17.796 14.948 18.036 14.996 18.3 15.104C18.564 15.212 18.84 15.368 19.14 15.572L23.112 18.392C23.424 18.608 23.64 18.86 23.772 19.16C23.892 19.46 23.964 19.76 23.964 20.096Z"
                                             fill="#F6F6F6" />
-                                    </svg> 23 55 131
+                                    </svg> 8 950 437 34 40
                                 </a>
                             </li>
 
@@ -659,6 +667,44 @@
         </footer>
 
     </div>
+
+
+     <!-- Добавляем оверлей перед попапом -->
+     <div class="popup-overlay" id="popupOverlay"></div>
+
+     <div class="popUp_call" id="popupCall">
+         <div onclick="closePopup()" class="popUp_close">
+             <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <rect x="4.45703" y="0.666626" width="24" height="2.66667" rx="1.33333"
+                     transform="rotate(45 4.45703 0.666626)" fill="#FE7126" />
+                 <rect x="2.57422" y="18" width="24" height="2.66667" rx="1.33333" transform="rotate(-45 2.57422 18)"
+                     fill="#FE7126" />
+             </svg>
+         </div>
+ 
+         <div class="base_title base_titlePop">ОСТАВИТЬ ЗАЯВКУ НА АБОНЕМЕНТ</div>
+ 
+         <form class="popUpForm" action="">
+             <input type="text" placeholder="Имя и фамилия">
+             <input type="text" placeholder="Номер телефона">
+             <button class="buttonPopUP" type="submit">Отправить</button>
+ 
+             <span class="spanPop">
+                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g opacity="0.6">
+                         <path
+                             d="M9 11.5L12 14.5L22 4.5M21 12.5V19.5C21 20.0304 20.7893 20.5391 20.4142 20.9142C20.0391 21.2893 19.5304 21.5 19 21.5H5C4.46957 21.5 3.96086 21.2893 3.58579 20.9142C3.21071 20.5391 3 20.0304 3 19.5V5.5C3 4.96957 3.21071 4.46086 3.58579 4.08579C3.96086 3.71071 4.46957 3.5 5 3.5H16"
+                             stroke="#333433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </g>
+                 </svg>
+                 <p class="form_text">
+                     Согласен на <a href="">обработку персональных данных</a>, ознакомлен <a
+                         href="">с&nbsp;пользовательским соглашением</a> <a href="">и&nbsp;политикой
+                         конфиденциальности</a>
+                 </p>
+             </span>
+         </form>
+     </div>
 
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main.js"></script>
